@@ -1,0 +1,88 @@
+:root {
+  /* Color Palette */
+  --color-light: #fff;    
+  --color-dark: #000;  
+  --color-accent-one: #C7D937;      
+  --color-accent-two: #F27405;      
+  --color-accent-one: #25B8D9;      
+
+  /* Spacing Scale (Consistent padding/margins) */
+  --space-xs: 0.5rem;  /* 8px */
+  --space-sm: 1rem;    /* 16px */
+  --space-md: 2rem;    /* 32px */
+  --space-lg: 4rem;    /* 64px */
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --font-display: 'Notably Absent', cursive;
+  --lsp-heading: 5px;
+
+  /* Font Sizes */
+  --fs-sm: 2rem;   
+  --fs-base: 1rem;     
+  --fs-lg: 3rem;
+
+  /* Line Heights */
+  --lh-body: 2;
+  --lh-heading: 1.1;
+
+  /* Buttons/Links */
+  --btn-padding-y: 0.75rem;
+  --btn-padding-x: 1.5rem;
+  --btn-radius: 7px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+
+body {
+    font-family: var(--font-main);
+    font-size: var(--fs-base);
+    line-height: var(--lh-body);
+    margin-block: var(--space-sm);
+}
+
+h1, h2 {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    line-height: var(--lh-heading);
+    margin-block: var(--space-sm);
+    text-transform: uppercase;
+    letter-spacing: var(--lsp-heading);
+}
+
+/* HEADER */
+
+.header {
+    padding-inline: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav__list {
+    display: none;
+}
+
+.nav__btn {
+    background-color: transparent;
+    border: none;
+}
+
+.nav__btn img {
+    width: 25px;
+    height: auto;
+}
