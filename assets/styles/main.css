@@ -71,10 +71,11 @@ h1, h2 {
 .nav__logo {
     width: 100px;
     height: auto;
+    z-index: 10;
 }
 
 .nav__list {
-  position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,13 +83,51 @@ h1, h2 {
     list-style-type: none;
     background: var(--color-light);
 
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+
+    padding: calc(var(--space-lg) * 4) var(--space-md) var(--space-md) var(--space-md);
+    gap: var(--space-md);
+
     transform: translateX(100%); 
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav__list--item a {
+    text-decoration: none;
+    color: var(--color-dark);
+    display: block;
+    width: 100%;
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    text-align: center;
+    border: 1px solid var(--color-dark);
+    border-radius: var(--btn-radius);
+    text-decoration: none;
+}
+
+.nav__list--item:last-child {
+    margin-top: auto;
+    margin-bottom: 3rem;
+    align-self: center;
+}
+
+.nav__list--item:last-child a {
+    padding: var(--space-xs) var(--space-md);
+    color: var(--color-light);
+    background-color: var(--color-dark);
 }
 
 .nav__list.nav--active {
-    transform: translateX(var(--space-md));
+    transform: translateX(0);
     z-index: 9;
+}
+
+a.nav-link--active {
+    background-color: var(--color-accent-two);
+    color: var(--color-light);
 }
 
 .nav__btn {
@@ -101,3 +140,4 @@ h1, h2 {
     width: 25px;
     height: auto;
 }
+
