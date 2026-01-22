@@ -146,7 +146,7 @@ a.nav-link--active {
 
     .nav {
         justify-content: unset;
-        gap: calc(var(--space-lg) * 2.5);
+        gap: clamp(2rem, 8vw, 12rem);
         padding: var(--space-md) var(--space-lg);
     }
 
@@ -160,7 +160,7 @@ a.nav-link--active {
         flex-direction: row;
         transform: none;
         padding: 0;
-        gap: var(--space-lg);
+        gap: clamp(1.5rem, 4vw, 6rem);
     }
 
     .nav__list--item a {
