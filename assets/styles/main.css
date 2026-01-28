@@ -321,6 +321,28 @@ a.nav-link--active {
     }
 }
 
+
+/* ==========================================================================
+   LOCATION STRIP
+   ========================================================================== */
+
+
+.location-strip .location-strip__list {
+    padding-block: var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background: #f3f3f3;
+}
+
+.location-strip .location-strip__list {
+    text-transform: uppercase;
+    letter-spacing: calc(var(--lsp-heading) / 2);
+    font-weight: 300;
+}
+
+
 /* ==========================================================================
    HOW IT WORKS SECTION
    ========================================================================== */
