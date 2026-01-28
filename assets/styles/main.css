@@ -327,19 +327,30 @@ a.nav-link--active {
    ========================================================================== */
 
 
-.location-strip .location-strip__list {
-    padding-block: var(--space-md);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    background: #f3f3f3;
+.location-strip {
+    display: none;
 }
 
-.location-strip .location-strip__list {
-    text-transform: uppercase;
-    letter-spacing: calc(var(--lsp-heading) / 2);
-    font-weight: 300;
+@media (min-width: 1024px) {
+
+    .location-strip {
+        display: block;
+    }
+
+    .location-strip .location-strip__list {
+        padding-block: var(--space-md);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        background: #f3f3f3;
+    }
+
+    .location-strip .location-strip__list {
+        text-transform: uppercase;
+        letter-spacing: calc(var(--lsp-heading) / 2);
+        font-weight: 300;
+    }
 }
 
 
